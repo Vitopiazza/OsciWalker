@@ -1,13 +1,13 @@
-# Osciwalker
+# OsciWalker
 
 ## Short summary
 
-Osciwalker is a simple oscilloscope-display based game, primarily targeted at the STM32F3DISCOVERY evaluation board. It is a simplistic "runner" game, where you must guide a fragile spaceship through an endless subterran cave, avoiding dangerous obsticles such as hanging ice stalagtites and poisonous mushrooms.
+OsciWalker is a simple oscilloscope-display based game, primarily targeted at the STM32F3DISCOVERY evaluation board. It is a simplistic "runner" game, where you must guide a fragile spaceship through an endless subterranean cave, avoiding dangerous obstacles such as hanging ice stalactites and poisonous mushrooms.
 
 ## What does it do?
 
-The STM32F3DISCOVERY board features, amongst other peripherals, an integrated acceleration sensor and two independant DAC channels. By hooking up the two DACs to the X and Y channels of any X-Y mode capable oscilloscope, it is possible to render graphics to the oscilloscope screen.
-The STM32F3DISCOVERY board is used as a motion sensing controller - by flicking the board up or down, the rendered ship can be instructed to temporary increase or decrese its attitude, thereby avoiding dangerous obstacles. The game also uses the noise from the acceleration sensor to feed a PRNG generator, assuring that no two playthrough are alike.
+The STM32F3DISCOVERY board features, amongst other peripherals, an integrated acceleration sensor and two independent DAC channels. By hooking up the two DACs to the X and Y channels of any X-Y mode capable oscilloscope, it is possible to render graphics to the oscilloscope screen.
+The STM32F3DISCOVERY board is used as a motion sensing controller - by flicking the board up or down, the rendered ship can be instructed to temporary increase or decrease its attitude, thereby avoiding dangerous obstacles. The game also uses the noise from the acceleration sensor to feed a PRNG generator, assuring that no two playthrough are alike.
 
 ## Installation
 
@@ -31,7 +31,7 @@ A Python script to generate the oscilloscope graphics is also provided. To use i
 The arguments are png_to_c_vector.py [PNG file name] [scale factor] [v/h] ([m]):
 * PNG file name - location of .png file to convert.
 * Scale factor - how much to inflate/deflate the image - a factor of 1.0 gives the original PNG coordinates.
-* v/h - vertical or horizontal orientation: if veritcal, the PNG file is first transposed.
+* v/h - vertical or horizontal orientation: if vertical, the PNG file is first transposed.
 * m - optional, mirror the picture before conversion.
 
 ## License
