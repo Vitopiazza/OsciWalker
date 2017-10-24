@@ -4,6 +4,8 @@
 
 OsciWalker is a simple oscilloscope-display based game, primarily targeted at the STM32F3DISCOVERY evaluation board. It is a simplistic "runner" game, where you must guide a fragile spaceship through an endless subterranean cave, avoiding dangerous obstacles such as hanging ice stalactites and poisonous mushrooms.
 
+![OsciWalker game captured from a Rigol Oscilloscope](https://raw.githubusercontent.com/dselcan/OSciWalker/master/docs/OsciWalker_Rigol_digital_capture.jpeg)
+
 ## What does it do?
 
 The STM32F3DISCOVERY board features, amongst other peripherals, an integrated acceleration sensor and two independent DAC channels. By hooking up the two DACs to the X and Y channels of any X-Y mode capable oscilloscope, it is possible to render graphics to the oscilloscope screen.
@@ -24,6 +26,8 @@ The game inside the emulator is controlled by the UP and DOWN keyboard keys.
 ### Connecting to an Oscilloscope
 
 The STM32F3DISCOVERY board with the flashed firmware can be connected to an Oscilloscope by connecting the PA4 and PA5 pins of the STM32F3 microcontroller to the oscilloscope inputs. Be sure to connect the signal ground pin to a GND pin as well. A debug UART is present on pins B10 (output from STM32F3) and B11 (input to STM32F3).
+
+![OsciWalker pinout for the STM32F3DISCOVERY board](https://raw.githubusercontent.com/dselcan/OSciWalker/master/docs/STM32F3Discovery_pinout.png)
 
 ### Graphics generator
 
